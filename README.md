@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SkillSwap
 
-## Getting Started
+**Trade Skills, Not Money.**
 
-First, run the development server:
+SkillSwap is an international skill-exchange platform where people teach what they know and learn what they want — no payment involved. Guitar lessons for coding help, photography tips for a language exchange — SkillSwap connects people who want to trade knowledge directly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-purple?style=flat-square&logo=framer)
+![License](https://img.shields.io/badge/status-in_development-yellow?style=flat-square)
+
+---
+
+## ✨ Overview
+
+SkillSwap reimagines learning as a two-way exchange. Instead of paying for courses or tutors, users list the skills they can teach and the skills they want to learn, then connect with a match — a true barter economy for knowledge.
+
+This repository currently contains the **frontend** of the platform, built with a premium, modern dark-themed UI inspired by products like Linear, Vercel, and Raycast.
+
+## 🖥️ Preview
+
+The landing page features a video hero background, animated stats, and a floating glassmorphism navbar. The dashboard offers a full user experience — swap tracking, profile management, and messaging — all built on dummy data ahead of backend integration.
+
+## 🚀 Features
+
+- **Landing Page** — video hero background, animated badge & stats, features grid, skill categories, testimonials, FAQ accordion, and a live activity toast
+- **Explore Page** — browsable skill listings with search, category filters, sorting, and individual skill detail pages
+- **Pricing Page** — monthly/yearly toggle with tiered plans and an FAQ section
+- **Auth Pages** — split-screen Login, Signup, and Forgot Password flows (UI complete, backend pending)
+- **Dashboard** — sidebar navigation, overview stats, swap tracking, profile editor with live avatar/name sync, and a chat-style messaging panel
+- **Fully Responsive** — dedicated mobile layouts across every page
+- **Route-Grouped Layouts** — public pages and the dashboard use separate layouts, so navigation and footer only appear where they belong
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Styling | Tailwind CSS v4 |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| State | React Context API |
+
+**Planned backend:** Express.js, MongoDB + Mongoose, JWT authentication, Socket.io for real-time messaging.
+
+## 📁 Project Structure
+
+```
+skillswap/
+  src/
+    app/
+      (main)/        → public pages (landing, about, explore, pricing, contact, how-it-works)
+      (auth)/        → login, signup, forgot-password
+      dashboard/     → overview, my-swaps, profile, messages
+    components/      → organized by feature (landing, dashboard, layout, effects, etc.)
+    data/            → dummy data powering the UI ahead of backend integration
+    context/         → shared app state (e.g. user profile)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+# Clone the repository
+git clone https://github.com/muhammadmursal/skillswap.git
+cd skillswap
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Install dependencies
+npm install
 
-## Learn More
+# Run the development server
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🗺️ Roadmap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [x] Frontend UI — all core pages complete
+- [ ] Backend API (Express.js + MongoDB)
+- [ ] Real authentication (JWT)
+- [ ] Real-time messaging (Socket.io)
+- [ ] Skill matching & swap request logic
+- [ ] Deployment
 
-## Deploy on Vercel
+## 👤 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Muhammad Mursal**
+Frontend Developer, based in Faisalabad, Pakistan
+GitHub: [@muhammadmursal](https://github.com/muhammadmursal)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*This project is under active development as part of a self-directed learning journey in frontend engineering.*
