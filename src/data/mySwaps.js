@@ -1,0 +1,38 @@
+export const mySwaps = [
+  {
+    id: 1,
+    partner: "Sarah Khan",
+    avatar: "https://i.pravatar.cc/150?img=25",
+    youTeach: "Guitar",
+    theyTeach: "UI Design",
+    status: "pending",
+    date: "Aug 10, 2026",
+  },
+  {
+    id: 2,
+    partner: "Bilal Ahmed",
+    avatar: "https://i.pravatar.cc/150?img=14",
+    youTeach: "React",
+    theyTeach: "Photography",
+    status: "active",
+    date: "Aug 5, 2026",
+  },
+  {
+    id: 3,
+    partner: "Zainab Ali",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    youTeach: "English Speaking",
+    theyTeach: "Cooking",
+    status: "completed",
+    date: "Jul 28, 2026",
+  },
+  {
+    id: 4,
+    partner: "Hamza Sheikh",
+    avatar: "https://i.pravatar.cc/150?img=51",
+    youTeach: "Video Editing",
+    theyTeach: "Digital Marketing",
+    status: "pending",
+    date: "Aug 9, 2026",
+  },
+];

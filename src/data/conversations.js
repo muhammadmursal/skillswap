@@ -1,0 +1,55 @@
+export const conversations = [
+  {
+    id: 1,
+    name: "Sarah Khan",
+    avatar: "https://i.pravatar.cc/150?img=25",
+    lastMessage: "Sounds great! Let's start next week 🎸",
+    time: "2m ago",
+    unread: 2,
+    online: true,
+    messages: [
+      { from: "them", text: "Hey! I saw you teach guitar 🎸", time: "10:20 AM" },
+      { from: "me", text: "Yes! I'd love to help. What's your level?", time: "10:22 AM" },
+      { from: "them", text: "Complete beginner, but very excited to learn!", time: "10:23 AM" },
+      { from: "them", text: "Sounds great! Let's start next week 🎸", time: "10:25 AM" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Bilal Ahmed",
+    avatar: "https://i.pravatar.cc/150?img=14",
+    lastMessage: "Sent you the React roadmap doc",
+    time: "1h ago",
+    unread: 0,
+    online: true,
+    messages: [
+      { from: "me", text: "Hi Bilal, ready for our next session?", time: "9:00 AM" },
+      { from: "them", text: "Yes! Sent you the React roadmap doc", time: "9:15 AM" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Zainab Ali",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    lastMessage: "Thank you for the amazing swap!",
+    time: "Yesterday",
+    unread: 0,
+    online: false,
+    messages: [
+      { from: "them", text: "Thank you for the amazing swap!", time: "Yesterday" },
+      { from: "me", text: "You're welcome! You did great 😊", time: "Yesterday" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Hamza Sheikh",
+    avatar: "https://i.pravatar.cc/150?img=51",
+    lastMessage: "Can we reschedule to Friday?",
+    time: "2 days ago",
+    unread: 1,
+    online: false,
+    messages: [
+      { from: "them", text: "Can we reschedule to Friday?", time: "2 days ago" },
+    ],
+  },
+];
