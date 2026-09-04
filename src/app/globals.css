@@ -50,3 +50,7 @@ body {
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
